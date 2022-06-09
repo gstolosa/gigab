@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Login basico</title>
+    <link rel="stylesheet" href="./css/stylelogin.css">
+</head>
+
+<body>
+    
+    <div class="caja">
+        <h2>Inicio de Sesión</h2>
+        <form action="">
+            <div class="inputcaja">
+                <input type="text" name="usuario" required="" id="usuario">
+                <label for="">Usuario</label>
+            </div>
+            <div class="inputcaja">
+                <input type="password" name="pass" required="" id="pass">
+                <label for="">Contraseña</label>
+            </div>
+            <input type="button" value="Ingresar" onclick="validar()">
+            
+        </form>
+    </div>
+    <script>
+        function validar() {
+            var usuario = document.getElementById("usuario").value;
+            var Contraseña = document.getElementById("pass").value;
+
+            if (usuario == "gito" && Contraseña == "1234") {
+                window.location.href = "inicio.html"
+            } else {
+                alert("Verifique sus credenciales");
+            }
+        }
+    </script>
+</body>
+
+</html>
