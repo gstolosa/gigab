@@ -80,7 +80,7 @@ hr {
 .welcome {
     width: 100%;
     height: 400px;
-    background: url(/images/bannerwelcome.jpg) no-repeat center center/cover;
+    background: url(./images/bannerwelcome.jpg) no-repeat center center/cover;
     padding: 70px;
     margin-bottom: 30px;
     display: flex;
