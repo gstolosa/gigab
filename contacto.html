@@ -2,12 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contáctenos</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website with a contact Form 01</title>
+    <link rel="stylesheet" href="/styles/enviar.css">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <h1>Formulario de contacto</h1>
-    <p>Sección donde contiene un formulario para contacto, tendrá su CSS correspondiente </p>
+    
+    <!-- Para que el contenido esté centrado, lo metemos en una clase container -->
+    <div class="container">
+        <!-- Tambien nav como clase para luego darle el estilo -->
+        <nav class="nav-main">
+            <ul class="nav-menu">
+                <li>
+                    <a href="home.html"><i class="fas fa-home"> Home</i></a>
+                </li>
+            </ul>
+            </div>
+    
+    <div class="content">
+
+        <h1 class="logo">Contactenos </h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Contactenos</h3>
+                <form action="/enviar.php" method="post" class="form_contact">
+                    <p>
+                        <label>Nombre completo</label>
+                        <input type="text" name="nombre" required>
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="correo" required>
+                    </p>
+                    <p>
+                        <label>Telefono</label>
+                        <input type="tel" name="telefono">
+                    </p>
+                    <p>
+                        <label>Direccion</label>
+                        <input type="text" name="direccion">
+                    </p>
+                    <p class="block">
+                       <label>Mensaje</label> 
+                        <textarea name="mensaje" required rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> San Blas</li>
+                    <li><i class="fas fa-phone"></i> (54) 911 62447463</li>
+                    <li><i class="fas fa-envelope-open-text"></i> info@dwifts16.ghoproinc.com.ar</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                <p>Company.com</p>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>

@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;  
+    background-image: linear-gradient(110deg, #20262f 0, #22262f 10%, #23252f 20%, #25252e 30%, #27242e 40%, #28242d 50%, #29242c 60%, #2b232b 70%, #2c232a 80%, #2d2329 90%, #2e2328 100%);
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+    color:#fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+/* Barra de navegación */
+.nav-main {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: bottom;
+    height: 90px;
+    padding: 20px 0;
+}
+
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 20px;
+}
+
+hr {
+    margin: 5px 0;
+}
+
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+.nav-main .submenu {
+    display: none;
+}
+
+.nav-main li:hover .submenu {
+    display: block;
+    background-color: #20262f;
+    opacity: .9;
+}
+
+.nav-main .nav-menu ul.submenu > li > a {
+    color:#fff;
+    text-decoration: none;
+    padding: 0 35px;
+}
+
+.nav-main .nav-menu > li > a {
+    padding: 0 50px;
+}
+
+/* Bienvenida */
+.welcome {
+    width: 100%;
+    height: 400px;
+    background: url(./img/bannerwelcome.jpg) no-repeat center center/cover;
+    padding: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.welcome h2 {
+    margin-bottom: 15px;
+}
+
+/* Tarjetas */
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.news-cards img {
+    width: 90%;
+    height: 180px;
+}
+
+.news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.news-cards a {
+   padding: 10px 0;
+   color: #f2f2f2;
+   text-transform: uppercase;
+   display: inline-block;
+}
+
+.news-cards a:hover {
+    text-decoration: underline;
+}
+
+/* Social */
+.social {
+    margin: 60px;
+}
+.social h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.social p {
+    font-size: 25px;
+    margin: 5px 30px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+.link a i {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+.footer {
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul {
+    margin: 0 auto;
+}
+
+.footer-container ul li {
+    line-height: 3.0;
+}
+
+.copyright {
+    text-align: center;
+    color: #747171;
+    padding-bottom: 20px;
+}
+
+/*Cambia de tamaño según dispositivo*/
+@media (max-width: 700px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-main ul.nav-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #2f3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px); 
+        transition: transform .5s ease-in-out;
+    }
+
+    .nav-main ul.nav-menu.show {
+        transform: translate(-20px);
+    }
+
+    .nav-main ul.nav-menu li {
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .nav-main .nav-menu ul.submenu li {
+        display: block;
+        position: relative;
+        opacity: .9;
+         
+    }
+
+    .news-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .news-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .news-cards img {
+        height: 250px;
+    }
+
+    .footer .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+#boton{
+    display: inline-block;
+	padding: 3px 10px;
+	margin-top: 10px;
+
+	background: #276dd7;
+	color: rgb(229, 229, 239);
+	border: 2px solid #f4efef;
+	cursor: pointer;
+
+	
+}
+.test1 {
+    width: 95%;
+    margin: auto;
+    font-size: 25px;
+}
