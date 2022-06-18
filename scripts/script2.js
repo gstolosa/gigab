@@ -13,7 +13,7 @@ const preguntas = [
     respuestaCorrecta: "b",
   },
   {
-    pregunta: "2. Que juego multiplayer shother estamos presentando?",
+    pregunta: "2. Que juego multiplayer shooter estamos presentando?",
     respuestas: {
       
       a: "Valorant",

@@ -18,7 +18,12 @@ $carta .="direccion: $direccion \n";
 $carta .= "Mensaje: $mensaje";
 
 // Enviando Mensaje
-mail($destinatario, $asunto, $carta);
-header('Location:mensaje-de-envio.html');
+$resultado = mail($destinatario, $asunto, $carta);
+if ($resultado) {
+    header('Location:mensaje-de-envio.html');
+} else {
+    echo "Tu mensaje no se ha enviado. Intenta de nuevo.";
+}
+
 
 ?>
