@@ -24,8 +24,8 @@ body{
 /* FORMULARIO =================================== */
 
 .form_wrap{
-    width: 1050px;
-    height: 530px;
+    width: 600px;
+    height: 350px;
     margin: 50px auto;
     display: flex;
 
@@ -234,7 +234,6 @@ form.form_contact input[type="submit"]:hover{
 	border: 2px solid #B14141;
 	cursor: pointer;
 
-	float: right;
 }
 
 /* MENSAJE EXITOSO*/
@@ -252,7 +251,9 @@ form.form_contact input[type="submit"]:hover{
     display: block;
     text-align: center;
     margin-bottom: 20px;
+    color: #4091EC;
 }
+
 
 .mensaje-exito a{
     display: block;
