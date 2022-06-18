@@ -1,0 +1,19 @@
+body {
+    color: #DBDBDB;
+    background-image: linear-gradient(110deg, #20262f 0, #22262f 10%, #23252f 20%, #25252e 30%, #27242e 40%, #28242d 50%, #29242c 60%, #2b232b 70%, #2c232a 80%, #2d2329 90%, #2e2328 100%);
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#boton{
+    display: inline-block;
+	padding: 3px 10px;
+	margin-top: 10px;
+
+	background: #E25151;
+	color: #fff;
+	border: 2px solid #B14141;
+	cursor: pointer;
+
+	float: left;
+}
